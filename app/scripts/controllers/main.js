@@ -8,8 +8,16 @@
  * Controller of the desktopApp
  */
 angular.module('desktopApp')
-  .controller('MainCtrl', function ($scope) {
-    $scope.awesomeThings = [
+  .controller('MainCtrl', function () {
+
+    //to show and hide the list
+    this.showList = false;
+
+    this.toggleList = function() {
+      this.showList = !this.showList;
+    };
+
+    this.awesomeThings = [
       'HTML5 Boilerplate',
       'AngularJS',
       'Karma',

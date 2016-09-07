@@ -8,14 +8,18 @@
  *
  * Main module of the application.
  */
-angular
-  .module('desktopApp', [
+
+var myAppDeps = [
+    'ui.bootstrap',
     'ngAnimate',
     'ngCookies',
     'ngResource',
     'ngRoute',
-    'ngSanitize'
-  ])
+    'ngSanitize'];
+
+angular
+  .module('desktopApp', myAppDeps )
+  
   .config(function ($routeProvider, $locationProvider) {
     $locationProvider.html5Mode({
       enabled: true,
