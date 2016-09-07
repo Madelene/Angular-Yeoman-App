@@ -18,9 +18,12 @@ angular.module('desktopApp')
     };
 
     this.awesomeThings = [
-      'HTML5 Boilerplate',
-      'AngularJS',
-      'Karma',
-      'SitePoint'
+      'Κυριακή',
+      'Δευτέρα',
+      'Τρίτη' ,
+      'Τετάρτη',
+      'Πέμπτη',
+      'Παρασκευή',
+      'Σάββατο '
     ];
   });
